@@ -1,0 +1,46 @@
+.icon-menu{
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    span{
+        position: absolute;
+        background-color: white;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 10px;
+        transition: all 0.3s ease 0s;
+    }
+        &:before,
+        &:after{
+            content:'';
+            background-color: white;
+            position: absolute;
+            width: 100%;
+            height: 2%;
+            left: 0;
+            transition: all 0.3s ease 0s;
+        }
+        &:before{
+            top: 0;
+
+        }
+        &:after{
+            bottom: 0;
+        }
+        &__active{
+            &:before{
+                transform: rotate(45deg);
+                top: 9px;
+            }
+            &:after{
+                transform: rotate(-45deg);
+                bottom: 9px;
+            }
+            span{
+                transform: scale(0);
+            }
+        }
+}
