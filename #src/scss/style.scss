@@ -42,7 +42,7 @@ $md4: 479.98;
     max-width: $mw + px;
     margin: 0 auto;
     padding: 0 15px;
-
+    overflow: hidden;
 }
 //</ОСНОВНАЯ СЕТКА>=============================================================================
 
@@ -255,6 +255,7 @@ $md4: 479.98;
 
 
 .slider {
+  overflow: hidden;
   padding: 120px 0 60px 0;
   background-color: #f7f7f7;
   &__body {
@@ -295,11 +296,23 @@ $md4: 479.98;
     color: #848789;
     font-size: 24px;
     line-height: 34px;
-   
+   padding-bottom: 100px;
     font-style: italic;
   }
 }
 
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.swiper-pagination {
+  span{
+    margin-right: 10px;
+  }
+}
 
 
 

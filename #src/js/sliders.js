@@ -1,4 +1,4 @@
-
+@@include('swiper.min.js');
 
 let sliders = document.querySelectorAll('._swiper');
 if(sliders){
@@ -68,7 +68,8 @@ let lots_slider = new Swiper('.slider__body',{
 
     pagination: {
         el: '.swiper-pagination',
-        dynamicBullets: true,
+        //dynamicBullets: true,
+        clickable: true,
       },
 
 });
